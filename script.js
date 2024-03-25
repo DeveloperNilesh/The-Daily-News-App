@@ -117,6 +117,8 @@ function showPosition(position) {
         lon: position.coords.longitude,
     }
 
+    console.log(userCoordinates.lat +" , "+ userCoordinates.lon)
+
     sessionStorage.setItem("user-coordinates", JSON.stringify(userCoordinates));
     fetchUserWeatherInfo(userCoordinates);
 
